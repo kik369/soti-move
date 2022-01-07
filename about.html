@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-us" id="top">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Soti Removals</title>
+        <link rel="stylesheet" href="/frontpage/bulma-0.9.0/style.css" />
+        <link rel="stylesheet" href="/frontpage/mystyle.min.css" />
+        <script src="https://unpkg.com/feather-icons"></script>
+    </head>
+
+    <body>
+        <section class="section">
+            <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="/index.html">
+                            <img src="/frontpage/images/logo.png" alt="Soti Removals" />
+                        </a>
+                        <a
+                            role="button"
+                            class="navbar-burger burger"
+                            aria-label="menu"
+                            aria-expanded="false"
+                            data-target="navMenu"
+                        >
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+
+                    <div id="navMenu" class="navbar-menu">
+                        <div class="navbar-start has-text-weight-semibold">
+                            <a class="navbar-item mx-2" href="/services.html#home-move">
+                                Home Move
+                            </a>
+                            <a class="navbar-item mx-2" href="/services.html#office-move">
+                                Office Move
+                            </a>
+                            <a class="navbar-item mx-2" href="/services.html#clearance">
+                                Clearance
+                            </a>
+                            <a class="navbar-item mx-2" href="/services.html#handyman-services">
+                                Handyman Services
+                            </a>
+                            <a class="navbar-item mx-2" href="/about.html"> About Us </a>
+                            <a class="navbar-item mx-2" href="index.html#contact"> Contact </a>
+                        </div>
+                        <div class="navbar-end">
+                            <div class="navbar-item">
+                                <a
+                                    class="button is-medium is-rounded is-primary"
+                                    href="index.html#quote"
+                                >
+                                    <strong>Get a Quote</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <section class="hero is-halfheight">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns is-vcentered has-text-centered">
+                        <div class="column is-half">
+                            <div class="image">
+                                <img src="frontpage/images/bros2.png" alt="Workers" />
+                            </div>
+                        </div>
+                        <div class="column is-half">
+                            <h1 class="title is-2 is-uppercase">About us</h1>
+                            <p class="subtitle is-4">Thank you for visiting Soti Move Website</p>
+                            <hr class="poc-hr has-background-primary is-centered mb-6" />
+                            <div class="content">
+                                <p class="has-text-left">
+                                    We are small Family running company based in London. Our aim is
+                                    to provide professional, stress free move. Our promise is that
+                                    we will take care of all your belongings as our own. Our strong
+                                    side is our Friendly & Professional team who will carry your
+                                    work with highest responsibility.
+                                </p>
+                                <p class="has-text-left">
+                                    There is Not too small & Not too big jobs - for any your query,
+                                    give as a call on 07506247764 or drop us a line at
+                                    info@sotimove.co.uk
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer has-background-grey-dark has-text-light">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column">
+                        <figure class="image is-square">
+                            <img src="/frontpage/images/logo.png" alt="Soti Removals" />
+                        </figure>
+                    </div>
+                    <div class="column"></div>
+                    <div class="column">
+                        <p class="mt-2">
+                            <a href="">Privacy Policy</a>
+                        </p>
+                        <p class="mt-2">
+                            <a href="">Terms and Conditions</a>
+                        </p>
+                        <p class="mt-2">Soti Move LTD - Company number 10565985</p>
+                    </div>
+                    <div class="column"></div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="to-top-btn">
+            <a class="button is-medium is-primary" href="#top">
+                <span class="icon"><i height="36" width="36" data-feather="chevrons-up"></i></span>
+            </a>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Get all "navbar-burger" elements
+                const $navbarBurgers = Array.prototype.slice.call(
+                    document.querySelectorAll('.navbar-burger'),
+                    0
+                );
+
+                // Check if there are any navbar burgers
+                if ($navbarBurgers.length > 0) {
+                    // Add a click event on each of them
+                    $navbarBurgers.forEach(el => {
+                        el.addEventListener('click', () => {
+                            // Get the target from the "data-target" attribute
+                            const target = el.dataset.target;
+                            const $target = document.getElementById(target);
+
+                            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                            el.classList.toggle('is-active');
+                            $target.classList.toggle('is-active');
+                        });
+                    });
+                }
+            });
+        </script>
+        <script>
+            feather.replace();
+        </script>
+    </body>
+</html>
