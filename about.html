@@ -7,128 +7,26 @@
         <link rel="stylesheet" href="/frontpage/bulma-0.9.0/style.css" />
         <link rel="stylesheet" href="/frontpage/mystyle.min.css" />
         <script src="https://unpkg.com/feather-icons"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            $(function () {
+                $('#sec-footer').load('sec-footer.html');
+                $('#sec-about').load('sec-about.html');
+                $('#sec-navbar').load('sec-navbar.html');
+            });
+        </script>
     </head>
 
     <body>
-        <section class="section">
-            <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
-                <div class="container">
-                    <div class="navbar-brand">
-                        <a class="navbar-item" href="/index.html">
-                            <img src="/frontpage/images/logo.png" alt="Soti Removals" />
-                        </a>
-                        <a
-                            role="button"
-                            class="navbar-burger burger"
-                            aria-label="menu"
-                            aria-expanded="false"
-                            data-target="navMenu"
-                        >
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
-                        </a>
-                    </div>
+        <div id="sec-navbar"></div>
 
-                    <div id="navMenu" class="navbar-menu">
-                        <div class="navbar-start has-text-weight-semibold">
-                            <a class="navbar-item mx-2" href="/services.html#home-move">
-                                Home Move
-                            </a>
-                            <a class="navbar-item mx-2" href="/services.html#office-move">
-                                Office Move
-                            </a>
-                            <a class="navbar-item mx-2" href="/services.html#clearance">
-                                Clearance
-                            </a>
-                            <a class="navbar-item mx-2" href="/services.html#handyman-services">
-                                Handyman Services
-                            </a>
-                            <a class="navbar-item mx-2" href="/about.html"> About Us </a>
-                            <a class="navbar-item mx-2" href="index.html#contact"> Contact </a>
-                        </div>
-                        <div class="navbar-end">
-                            <div class="navbar-item">
-                                <a
-                                    class="button is-medium is-rounded is-primary"
-                                    href="index.html#quote"
-                                >
-                                    <strong>Get a Quote</strong>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </section>
+        <div id="sec-about"></div>
 
-        <section class="hero is-halfheight">
-            <div class="hero-body">
-                <div class="container">
-                    <div class="columns is-vcentered has-text-centered is-variable is-8">
-                        <div class="column is-half">
-                            <div class="image">
-                                <img src="frontpage/images/bros2.png" alt="Workers" />
-                            </div>
-                        </div>
-                        <div class="column is-half">
-                            <h1 class="title is-2 is-uppercase">About us</h1>
-                            <p class="subtitle is-4">Thank you for visiting Soti Move Website</p>
-                            <hr class="poc-hr has-background-primary is-centered mb-6" />
-                            <div class="content">
-                                <p class="has-text-left">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam
-                                    elementum pulvinar etiam non quam. Risus quis varius quam
-                                    quisque id diam vel. Platea dictumst vestibulum rhoncus est
-                                    pellentesque elit ullamcorper. Venenatis urna cursus eget nunc
-                                    scelerisque viverra. Lorem mollis aliquam ut porttitor. Fames ac
-                                    turpis egestas maecenas pharetra convallis. Convallis convallis
-                                    tellus id interdum velit laoreet id donec. Ultricies integer
-                                    quis auctor elit. In hendrerit gravida rutrum quisque non
-                                    tellus. Porta nibh venenatis cras sed felis eget.
-                                </p>
-                                <p class="has-text-left">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam
-                                    elementum pulvinar etiam non quam. Risus quis varius quam
-                                    quisque id diam vel. Platea dictumst vestibulum rhoncus est
-                                    pellentesque elit ullamcorper. Venenatis urna cursus eget nunc
-                                    scelerisque viverra. Lorem mollis aliquam ut porttitor. Fames ac
-                                    turpis egestas maecenas pharetra convallis. Convallis convallis
-                                    tellus id interdum velit laoreet id donec. Ultricies integer
-                                    quis auctor elit. In hendrerit gravida rutrum quisque non
-                                    tellus. Porta nibh venenatis cras sed felis eget.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer class="footer has-background-grey-dark has-text-light">
-            <div class="container">
-                <div class="columns is-vcentered">
-                    <div class="column">
-                        <figure class="image is-square">
-                            <img src="/frontpage/images/logo.png" alt="Soti Removals" />
-                        </figure>
-                    </div>
-                    <div class="column"></div>
-                    <div class="column">
-                        <p class="mt-2">
-                            <a href="">Privacy Policy</a>
-                        </p>
-                        <p class="mt-2">
-                            <a href="">Terms and Conditions</a>
-                        </p>
-                        <p class="mt-2">Soti Move LTD - Company number 10565985</p>
-                    </div>
-                    <div class="column"></div>
-                </div>
-            </div>
-        </footer>
+        <div id="sec-footer"></div>
 
         <div class="to-top-btn">
             <a class="button is-medium is-primary" href="#top">
