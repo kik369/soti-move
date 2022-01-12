@@ -290,7 +290,7 @@
                     <div
                         class="column is-full-tablet is-half-desktop is-half-widescreen is-half-fullhd"
                     >
-                        <form action="" method="POST">
+                        <form name="contact" method="POST" data-netlify="true">
                             <div class="field">
                                 <label for="name" class="label">Name</label>
                                 <div class="control">
@@ -415,6 +415,10 @@
                                         id="details"
                                     ></textarea>
                                 </div>
+                            </div>
+                            <div class="field">
+                                <label for="file" class="label">Attach a file</label>
+                                <input name="file" type="file" />
                             </div>
 
                             <div class="columns is-centered">
