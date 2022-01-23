@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us" id="top">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Soti Removals</title>
+        <link rel="stylesheet" href="/frontpage/bulma-0.9.0/style.css" />
+        <link rel="stylesheet" href="/frontpage/mystyle.min.css" />
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            $(function () {
+                $('#sec-footer').load('sec-footer.html');
+                $('#sec-terms').load('sec-terms.html');
+                $('#sec-navbar').load('sec-navbar.html');
+            });
+        </script>
+    </head>
+
+    <body>
+        <div id="sec-navbar"></div>
+
+        <div id="sec-terms"></div>
+
+        <div id="sec-footer"></div>
+
+        <div class="to-top-btn">
+            <a class="button is-medium is-primary" href="#top">
+                <span class="icon"><i height="36" width="36" data-feather="chevrons-up"></i></span>
+            </a>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Get all "navbar-burger" elements
+                const $navbarBurgers = Array.prototype.slice.call(
+                    document.querySelectorAll('.navbar-burger'),
+                    0
+                );
+
+                // Check if there are any navbar burgers
+                if ($navbarBurgers.length > 0) {
+                    // Add a click event on each of them
+                    $navbarBurgers.forEach(el => {
+                        el.addEventListener('click', () => {
+                            // Get the target from the "data-target" attribute
+                            const target = el.dataset.target;
+                            const $target = document.getElementById(target);
+
+                            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                            el.classList.toggle('is-active');
+                            $target.classList.toggle('is-active');
+                        });
+                    });
+                }
+            });
+        </script>
+        <script>
+            feather.replace();
+        </script>
+    </body>
+</html>
