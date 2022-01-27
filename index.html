@@ -7,6 +7,10 @@
         <link rel="stylesheet" href="/frontpage/bulma-0.9.0/style.css" />
         <link rel="stylesheet" href="/frontpage/mystyle.min.css" />
         <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+        />
         <script
             src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -306,6 +310,89 @@
             </div>
         </section>
 
+        <section class="section">
+            <div class="my-slider columns is-multiline is-vcentered is-centered">
+                <div class="column">
+                    <img src="/frontpage/images/carousel/101.jpeg" alt="" />
+                </div>
+                <div class="column">
+                    <img src="/frontpage/images/carousel/102.jpeg" alt="" />
+                </div>
+                <div class="column">
+                    <img src="/frontpage/images/carousel/103.jpeg" alt="" />
+                </div>
+                <div class="column">
+                    <img src="/frontpage/images/carousel/104.jpeg" alt="" />
+                </div>
+                <div class="column">
+                    <img src="/frontpage/images/carousel/105.jpeg" alt="" />
+                </div>
+                <div class="column">
+                    <img src="/frontpage/images/carousel/106.jpeg" alt="" />
+                </div>
+                <div class="column">
+                    <img src="/frontpage/images/carousel/107.jpeg" alt="" />
+                </div>
+                <div class="column">
+                    <img src="/frontpage/images/carousel/108.jpeg" alt="" />
+                </div>
+                <div class="column">
+                    <img src="/frontpage/images/carousel/109.jpeg" alt="" />
+                </div>
+                <div class="column">
+                    <img src="/frontpage/images/carousel/111.jpeg" alt="" />
+                </div>
+                <div class="column">
+                    <img src="/frontpage/images/carousel/112.jpeg" alt="" />
+                </div>
+                <div class="column">
+                    <img src="/frontpage/images/carousel/113.jpeg" alt="" />
+                </div>
+                <div class="column">
+                    <img src="/frontpage/images/carousel/114.jpeg" alt="" />
+                </div>
+                <div class="column">
+                    <img src="/frontpage/images/carousel/115.jpeg" alt="" />
+                </div>
+                <div class="column">
+                    <img src="/frontpage/images/carousel/116.jpeg" alt="" />
+                </div>
+                <div class="column">
+                    <img src="/frontpage/images/carousel/117.jpeg" alt="" />
+                </div>
+                <div class="column">
+                    <img src="/frontpage/images/carousel/118.jpeg" alt="" />
+                </div>
+                <div class="column">
+                    <img src="/frontpage/images/carousel/119.jpeg" alt="" />
+                </div>
+                <div class="column">
+                    <img src="/frontpage/images/carousel/120.jpeg" alt="" />
+                </div>
+                <div class="column">
+                    <img src="/frontpage/images/carousel/121.jpeg" alt="" />
+                </div>
+                <div class="column">
+                    <img src="/frontpage/images/carousel/122.jpeg" alt="" />
+                </div>
+                <div class="column">
+                    <img src="/frontpage/images/carousel/123.jpeg" alt="" />
+                </div>
+                <div class="column">
+                    <img src="/frontpage/images/carousel/124.jpeg" alt="" />
+                </div>
+                <div class="column">
+                    <img src="/frontpage/images/carousel/125.jpeg" alt="" />
+                </div>
+                <div class="column">
+                    <img src="/frontpage/images/carousel/126.jpeg" alt="" />
+                </div>
+                <div class="column">
+                    <img src="/frontpage/images/carousel/127.jpeg" alt="" />
+                </div>
+            </div>
+        </section>
+
         <section id="contact" class="section is-medium has-background-white-bis">
             <div class="container">
                 <div class="mb-6">
@@ -540,7 +627,7 @@
                             </div>
 
                             <div class="columns is-centered">
-                                <div class="column is-one-third">
+                                <div class="column is-half">
                                     <div class="field">
                                         <div class="control">
                                             <input
@@ -595,5 +682,28 @@
             feather.replace();
         </script>
         <script src="stats.js"></script>
+        <script type="module">
+            import { tns } from './src/tiny-slider.js';
+
+            var slider = tns({
+                container: '.my-slider',
+                responsive: {
+                    500: {
+                        items: 1,
+                    },
+                    750: {
+                        items: 2,
+                    },
+                    1100: {
+                        items: 3,
+                    },
+                },
+                slideBy: 'page',
+                autoplay: true,
+                autoplayButtonOutput: false,
+                nav: false,
+                controls: false,
+            });
+        </script>
     </body>
 </html>
