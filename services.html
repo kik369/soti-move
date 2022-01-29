@@ -15,13 +15,71 @@
         <script>
             $(function () {
                 $('#sec-footer').load('sec-footer.html');
-                $('#sec-navbar').load('sec-navbar.html');
             });
         </script>
     </head>
 
     <body>
-        <div id="sec-navbar"></div>
+        <section class="section">
+            <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="/index.html">
+                            <img src="/frontpage/images/logo.png" alt="Soti Removals" />
+                        </a>
+                        <a
+                            role="button"
+                            class="navbar-burger burger"
+                            aria-label="menu"
+                            aria-expanded="false"
+                            data-target="navMenu"
+                        >
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+
+                    <div id="navMenu" class="navbar-menu">
+                        <div class="navbar-start has-text-weight-semibold">
+                            <a class="navbar-item mx-2" href="/services.html#home-move">
+                                Home Move
+                            </a>
+                            <a class="navbar-item mx-2" href="/services.html#office-move">
+                                Office Move
+                            </a>
+                            <a class="navbar-item mx-2" href="/services.html#clearance">
+                                Clearance
+                            </a>
+                            <a class="navbar-item mx-2" href="/services.html#storage">
+                                Storage & Packaging
+                            </a>
+                            <a class="navbar-item mx-2" href="/about.html"> About Us </a>
+                            <a class="navbar-item mx-2" href="/index.html#contact"> Contact </a>
+                            <a
+                                class="navbar-item mx-2"
+                                href="https://www.facebook.com/sotimove/"
+                                target="_blank"
+                            >
+                                <span class="icon">
+                                    <img src="/frontpage/images/facebook.svg" alt="" srcset="" />
+                                </span>
+                            </a>
+                        </div>
+                        <div class="navbar-end">
+                            <div class="navbar-item">
+                                <a
+                                    class="button is-medium is-rounded is-primary"
+                                    href="/index.html#quote"
+                                >
+                                    <strong>Get a Quote</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
 
         <section
             id="home-move"
