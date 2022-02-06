@@ -3,7 +3,10 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Friendly and efficient removal service based in London">
+        <meta
+            name="description"
+            content="Friendly and efficient removal service based in London. House and flat removals. Business removals. Clearance. Storage and Packaging"
+        />
         <title>Soti Removals | Home</title>
         <link rel="stylesheet" href="/frontpage/bulma-0.9.0/style.css" />
         <link rel="stylesheet" href="/frontpage/mystyle.min.css" />
@@ -12,7 +15,7 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
         />
-        <link rel="stylesheet" href="mystyle.css">
+        <link rel="stylesheet" href="mystyle.css" />
         <script
             src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -21,7 +24,6 @@
         <script>
             $(function () {
                 $('#sec-footer').load('sec-footer.html');
-
             });
         </script>
     </head>
@@ -46,12 +48,18 @@
                             <span aria-hidden="true"></span>
                         </a>
                     </div>
-        
+
                     <div id="navMenu" class="navbar-menu">
                         <div class="navbar-start has-text-weight-semibold">
-                            <a class="navbar-item mx-2" href="/services.html#home-move"> Home Move </a>
-                            <a class="navbar-item mx-2" href="/services.html#office-move"> Office Move </a>
-                            <a class="navbar-item mx-2" href="/services.html#clearance"> Clearance </a>
+                            <a class="navbar-item mx-2" href="/services.html#home-move">
+                                Home Move
+                            </a>
+                            <a class="navbar-item mx-2" href="/services.html#office-move">
+                                Office Move
+                            </a>
+                            <a class="navbar-item mx-2" href="/services.html#clearance">
+                                Clearance
+                            </a>
                             <a class="navbar-item mx-2" href="/services.html#storage">
                                 Storage & Packaging
                             </a>
@@ -115,15 +123,13 @@
                             <div class="card-content">
                                 <div class="media">
                                     <div class="media-content">
-                                        <p class="title is-4 mt-6">
-                                            House and flat removals</p>
-                                            <figure class="image is-2by1 my-6">
-                                                <img
-                                                    src="/frontpage/img/icon-home.svg"
-                                                    alt="Home Move"
-                                                />
-                                            </figure>
-                                        </p>
+                                        <p class="title is-4 mt-6">House and flat removals</p>
+                                        <figure class="image is-2by1 my-6">
+                                            <img
+                                                src="/frontpage/img/icon-home.svg"
+                                                alt="Home Move"
+                                            />
+                                        </figure>
                                         <a
                                             href="/services.html#home-move"
                                             class="button is-light is-rounded mb-6"
@@ -351,13 +357,22 @@
                     </div>
 
                     <div class="column is-full mt-6 iframe-container is-hidden-touch">
-                              <iframe style="border: 0" width="100%" height="100%"  src="https://trustedtraders.which.co.uk/widgets/businesses/soti-move-ltd/reviews"></iframe>
+                        <iframe
+                            style="border: 0"
+                            width="100%"
+                            height="100%"
+                            src="https://trustedtraders.which.co.uk/widgets/businesses/soti-move-ltd/reviews"
+                        ></iframe>
                     </div>
 
                     <div class="column is-full mt-6 is-hidden-desktop">
-                        <iframe style="border: 0" width="100%" height="900px"  src="https://trustedtraders.which.co.uk/widgets/businesses/soti-move-ltd/reviews"></iframe>
-              </div>
-
+                        <iframe
+                            style="border: 0"
+                            width="100%"
+                            height="900px"
+                            src="https://trustedtraders.which.co.uk/widgets/businesses/soti-move-ltd/reviews"
+                        ></iframe>
+                    </div>
                 </div>
             </div>
         </section>
@@ -635,7 +650,9 @@
                                                     <option value="Home Move">Home Move</option>
                                                     <option value="Office Move">Office Move</option>
                                                     <option value="Clearance">Clearance</option>
-                                                    <option value="Storage & Packaging">Storage & Packaging</option>
+                                                    <option value="Storage & Packaging">
+                                                        Storage & Packaging
+                                                    </option>
                                                 </select>
                                             </div>
                                         </div>
@@ -696,7 +713,7 @@
                     document.querySelectorAll('.navbar-burger'),
                     0
                 );
-        
+
                 // Check if there are any navbar burgers
                 if ($navbarBurgers.length > 0) {
                     // Add a click event on each of them
@@ -705,7 +722,7 @@
                             // Get the target from the "data-target" attribute
                             const target = el.dataset.target;
                             const $target = document.getElementById(target);
-        
+
                             // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
                             el.classList.toggle('is-active');
                             $target.classList.toggle('is-active');
