@@ -1,0 +1,4 @@
+# a path:
+/frontpage/images/
+  # headers for that path:
+  Cache-Control: max-age=604800
